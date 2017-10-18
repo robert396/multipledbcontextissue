@@ -1,0 +1,10 @@
+ Volume in drive D is DATADRIVE1
+ Volume Serial Number is 18E8-F4E0
+
+ Directory of D:\Workspaces\DotNetCore\MultipleDbIssues
+
+[.]                    .gitignore             MultipleDbIssues.sln
+[..]                   dirs.txt               
+.gitattributes         [MultipleDbIssues]     
+               4 File(s)          8,291 bytes
+               3 Dir(s)  484,158,951,424 bytes free

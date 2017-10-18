@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
+using System;
+using System.Collections.Generic;
 
-namespace MultipleDbIssues.Data.Migrations.Sites
+namespace MultipleDbIssues.Data.Migrations.Site
 {
     public partial class RenameSiteDomainToDomain : Migration
     {

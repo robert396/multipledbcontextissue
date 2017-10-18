@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace MultipleDbIssues.Data.Migrations.Sites
+namespace MultipleDbIssues.Data.Migrations.Site
 {
     public partial class Initial : Migration
     {
@@ -12,9 +12,9 @@ namespace MultipleDbIssues.Data.Migrations.Sites
                 name: "Sites",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "varchar(127)", nullable: false),
-                    Name = table.Column<string>(type: "longtext", nullable: true),
-                    SiteDomain = table.Column<string>(type: "longtext", nullable: true)
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    SiteDomain = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

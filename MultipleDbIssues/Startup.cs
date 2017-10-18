@@ -23,14 +23,14 @@ namespace MultipleDbIssues
         {
             services.AddDbContext<ClientDbContext>(opts =>
             {
-                opts.UseMySql("Server=localhost; Port=3306; Database=sample_clients; Uid=root; Pwd=*passwordgoeshere*;");
+                opts.UseSqlServer("Server=localhost;Database=sample_clients;User Id=sa;Password=*password_goes_here*;");
             });
 
             services.AddDbContext<SiteDbContext>(opts =>
             {
-                opts.UseMySql("Server=localhost; Port=3306; Database=sample_sites; Uid=root; Pwd=*passwordgoeshere*;");
+                opts.UseSqlServer("Server=localhost;Database=sample_sites;User Id=sa;Password=*password_goes_here*;");
             });
-
+            
             services.AddMvc();
         }
 
